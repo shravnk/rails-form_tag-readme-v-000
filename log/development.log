@@ -253,3 +253,46 @@ ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticit
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.7ms)
+
+
+Started GET "/posts/new" for 69.119.155.175 at 2018-04-15 20:50:52 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/shravnk/rails-form_tag-readme-v-000/app/views/posts/new.html.erb:10: syntax error, unexpected keyword_end
+'.freeze;@output_buffer.append=( end );@output_buffer.safe_append='
+                                    ^
+/home/shravnk/rails-form_tag-readme-v-000/app/views/posts/new.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+/home/shravnk/rails-form_tag-readme-v-000/app/views/posts/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/new.html.erb:10: syntax error, unexpected keyword_end
+  app/views/posts/new.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.8ms)
+
+
+Started GET "/posts/new" for 69.119.155.175 at 2018-04-15 20:50:54 +0000
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/shravnk/rails-form_tag-readme-v-000/app/views/posts/new.html.erb:10: syntax error, unexpected keyword_end
+'.freeze;@output_buffer.append=( end );@output_buffer.safe_append='
+                                    ^
+/home/shravnk/rails-form_tag-readme-v-000/app/views/posts/new.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+/home/shravnk/rails-form_tag-readme-v-000/app/views/posts/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/new.html.erb:10: syntax error, unexpected keyword_end
+  app/views/posts/new.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.4ms)
